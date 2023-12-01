@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+pymorphy2 = "*"
+tinydb = "*"
+nltk = "*"
+spacy = "*"
+svgling = "*"
+cairosvg = "*"
+websockets = "*"
+wiki-ru-wordnet = "*"
+pandas = "*"
+neo4j = "*"
+minio = "*"
+textblob = "*"
+langdetect = "*"
+bert-extractive-summarizer = "*"
+torch = "*"
+rake-nltk = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

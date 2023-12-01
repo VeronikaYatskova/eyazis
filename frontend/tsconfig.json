@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "commonjs",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"baseUrl": "./",
+		"paths": {
+			"@shared/*": ["src/shared/*"],
+			"@shared": ["src/shared/index"],
+			"@pages/*": ["src/pages/*"],
+			"@pages": ["src/pages/index"],
+			"@app/*": ["src/app/*"],
+			"@app": ["src/app/index"],
+			"@widgets/*": ["src/widgets/*"],
+			"@widgets": ["src/widgets/index"],
+			"@entities/*": ["src/entities/*"],
+			"@entities": ["src/entities/index"],
+      "@public/*": ["public/*"],
+      "@features/*": ["src/features/*"],
+			"@features": ["src/features/index"]
+    }
+	},
+	"include": ["src", "typings"]
+}

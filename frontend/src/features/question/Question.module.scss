@@ -1,0 +1,49 @@
+@import '../../shared/styles/index.scss';
+
+.wrapper {
+  cursor: pointer;
+  width: vw(50);
+  height: vw(50);
+
+  @include screen('mobile') {
+    width: vw_m(100);
+    height: vw_m(100);
+  }
+
+
+  svg{
+    width: vw(50);
+    height: vw(50);  
+
+    @include screen('mobile') {
+      width: vw_m(100);
+      height: vw_m(100);
+    }
+  } 
+}
+
+
+.info {
+  &::-webkit-scrollbar {
+    width: vw(4);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: gray;
+  }
+
+  word-wrap: normal;
+  font-weight: 500;
+  font-size: vw(14);
+  line-height: vw(15);
+  color: #1d7409;
+
+  border-radius: 20px;
+  padding: vw(10);
+  position: absolute;
+  z-index: 999999;
+  width: vw(250);
+  overflow: auto scroll;
+  height: vw(250);
+  background: $header;
+}
