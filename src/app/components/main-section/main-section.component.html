@@ -1,0 +1,12 @@
+<div class="main">
+    <h2 class="title">PostDzen</h2>
+    <a routerLink="/login">Login</a>
+    <div class="btn" (click)="openModal(modalTemplate)">Create Post</div>
+    <app-categories 
+        [categories]="categories" 
+        (btnClick)="chooseCategory($any($event))">
+    </app-categories>
+    <app-posts [posts]="posts"></app-posts>
+</div>
+
+<ng-template #modalTemplate></ng-template>

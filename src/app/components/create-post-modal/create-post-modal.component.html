@@ -1,0 +1,22 @@
+<div class="modal {{ size }}">
+    <div class="modal-header">
+        {{ title }}
+        <span class="modal-close" (click)="close()">✕</span>
+    </div>
+    <form>
+        <div class="data">
+            <label>Title</label>
+            <input class="input-field" name="title" id="title" [(ngModel)]="postTitle" placeholder="Enter post's title">
+        </div>
+        <div class="data">
+            <label>Text</label>
+            <input class="input-field" name="text" id="text" [(ngModel)]="postText" placeholder="Enter post's text">
+        </div>
+        <app-dropdown (selectCategory)="categoryChange($any($event))"></app-dropdown>
+    </form>
+    <div class="modal-footer">
+        <button (click)="submit()">Submit</button>
+    </div>
+</div>
+
+<div class="modal-backdrop" (click)="close()"></div>

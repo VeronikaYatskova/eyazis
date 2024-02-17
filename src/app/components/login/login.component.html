@@ -1,0 +1,32 @@
+<form class="login-form" (ngSubmit)="onSubmit()">
+    <h2>Login</h2>
+    <div class="wrapper">   
+        <div class="field">
+            <label>Email</label>
+            <input 
+                type="text" 
+                id="email" 
+                name="email" 
+                placeholder="Enter email" 
+                [(ngModel)]="email">
+        </div>
+        @if (!email) {
+            <div [class.error]="!email">Email is required!</div>
+        }
+
+        <div class="field">
+            <label>Password</label>
+            <input 
+                type="text" 
+                id="password" 
+                name="password" 
+                placeholder="Enter password" 
+                [(ngModel)]="password">
+        </div>
+        @if (!password) {
+            <div [class.error]="!password">Password is required!</div>
+        }
+
+    </div>
+    <input type="submit" value="Login" class="btn" (click)="goToMainPage()">
+</form>

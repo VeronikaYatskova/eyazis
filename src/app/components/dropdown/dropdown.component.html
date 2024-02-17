@@ -1,0 +1,9 @@
+<label>Categories</label>
+<div>
+    <select name="Category" (change)="changeCategory($any($event))" class="form-control">
+        <option>--Select--</option>
+        <option [value]="category.id" *ngFor="let category of categories">
+            {{ category.name }}
+        </option>
+    </select>
+</div>

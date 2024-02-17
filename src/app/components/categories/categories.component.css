@@ -1,0 +1,12 @@
+.container {
+    width: 90vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #D5AFF3 solid 2px;
+    margin: 20px;
+}
+
+.category {
+    margin: 0px 5px 5px 5px;
+    cursor: pointer;
+}
